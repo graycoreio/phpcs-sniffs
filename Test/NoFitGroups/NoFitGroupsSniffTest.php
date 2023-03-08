@@ -1,16 +1,16 @@
 <?php
 
-use Graycore\PhpcsSniffs\Sniffs\NoFitGroups;
+use Graycore\PhpcsSniffs\Sniffs\NoFitGroupsSniff;
 use Graycore\Test\RunnerFactory;
 use PHP_CodeSniffer\Files\LocalFile;
 use PHPUnit\Framework\TestCase;
 
-class NoFitGroupsTest extends TestCase
+class NoFitGroupsSniffTest extends TestCase
 {
     public function testItPassesAGoodFile()
     {
         $runner = RunnerFactory::create([
-            NoFitGroups::class => NoFitGroups::class
+            NoFitGroupsSniff::class => NoFitGroupsSniff::class
         ]);
 
         $phpcsFile = new LocalFile(
@@ -27,7 +27,7 @@ class NoFitGroupsTest extends TestCase
     {
         $runner = RunnerFactory::create(
             [
-                NoFitGroups::class => NoFitGroups::class
+                NoFitGroupsSniff::class => NoFitGroupsSniff::class
             ],
             ['annotations' => true]
         );
@@ -39,6 +39,6 @@ class NoFitGroupsTest extends TestCase
         );
         $phpcsFile->process();
 
-        $this->assertEquals($phpcsFile->getErrors()[6][8][0]['message'], '@group fit discovered.');
+        $this->assertEquals($phpcsFile->getErrors()[6][8][0]['message'], '@group fit discovered on line 6');
     }
 }

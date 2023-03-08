@@ -5,9 +5,13 @@
     "license": "MIT",
     "autoload": {
         "psr-4": {
-            "Graycore\\PhpcsSniffs\\": "./",
+            "Graycore\\PhpcsSniffs\\": "./Graycore/",
             "Graycore\\Test\\": "Test/"
         }
+    },
+    "scripts": {
+        "lint": "./vendor/bin/phpcs --standard=. .",
+        "test:unit": "./vendor/bin/phpunit Test"
     },
     "authors": [
         {
