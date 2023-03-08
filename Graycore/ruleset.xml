@@ -1,4 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<ruleset name="Graycore" namespace="Graycore\PhpcsSniffs">
+<ruleset name="Graycore">
     <description>Sniffs for keeping PHP Code Clean.</description>
+    
+    <rule ref="Graycore.Comments.NoFitGroups.GroupFit">
+        <severity>8</severity>
+    </rule>
 </ruleset>

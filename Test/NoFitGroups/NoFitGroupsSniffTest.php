@@ -1,6 +1,6 @@
 <?php
 
-use Graycore\PhpcsSniffs\Sniffs\NoFitGroupsSniff;
+use Graycore\Sniffs\Comments\NoFitGroupsSniff;
 use Graycore\Test\RunnerFactory;
 use PHP_CodeSniffer\Files\LocalFile;
 use PHPUnit\Framework\TestCase;

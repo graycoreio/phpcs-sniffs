@@ -1,6 +1,6 @@
 <?php
 
-namespace Graycore\PhpcsSniffs\Sniffs;
+namespace Graycore\Sniffs\Comments;
 
 use PHP_CodeSniffer\Sniffs\Sniff;
 use PHP_CodeSniffer\Files\File;

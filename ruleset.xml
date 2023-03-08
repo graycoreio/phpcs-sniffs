@@ -3,7 +3,7 @@
     <description>Sniffs for keeping PHP Code Clean.</description>
 
     <exclude-pattern>./vendor/*</exclude-pattern>
-     <exclude-pattern>./Test/*spec/*</exclude-pattern>
+    <exclude-pattern>./Test/*spec/*</exclude-pattern>
 
     <rule ref="./Graycore"/>
 </ruleset>
