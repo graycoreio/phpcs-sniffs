@@ -1,0 +1,18 @@
+{
+    "name": "graycore/phpcs-sniffs",
+    "description": "A collection of sniffs that we use to keep our code clean.",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Graycore\\PhpcsSniffs\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Damien Retzinger",
+            "email": "damienwebdev@gmail.com"
+        }
+    ],
+    "require": {}
+}
