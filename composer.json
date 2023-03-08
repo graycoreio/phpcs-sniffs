@@ -14,5 +14,7 @@
             "email": "damienwebdev@gmail.com"
         }
     ],
-    "require": {}
+    "require": {
+        "squizlabs/php_codesniffer": "^3.0.0"
+    }
 }
