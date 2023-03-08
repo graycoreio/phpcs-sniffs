@@ -1,4 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<ruleset name="Graycore Sniffs" namespace="Graycore\PhpcsSniffs">
+<ruleset name="Graycore" namespace="Graycore\PhpcsSniffs">
     <description>Sniffs for keeping PHP Code Clean.</description>
 </ruleset>
