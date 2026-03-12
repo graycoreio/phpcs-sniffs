@@ -1,7 +1,7 @@
 {
     "name": "graycore/phpcs-sniffs",
     "description": "A collection of sniffs that we use to keep our code clean.",
-    "type": "library",
+    "type": "phpcodesniffer-standard",
     "license": "MIT",
     "autoload": {
         "psr-4": {
